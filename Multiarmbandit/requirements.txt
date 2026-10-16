@@ -1,0 +1,8 @@
+# RL-BLOG-ANIMATION: Dependencies
+# 
+# Note: The terminal simulator (simulate.py) requires ZERO external packages
+# and runs directly on standard Python 3.8+.
+#
+# Install the following only if rendering or editing ManimGL video animations:
+manimgl==1.7.2
+numpy>=1.24.0

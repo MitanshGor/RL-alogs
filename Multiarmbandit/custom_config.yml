@@ -1,0 +1,7 @@
+# Partial override of ManimGL defaults. Merged with manimlib/default_config.yml.
+tex:
+  # Avoid the full 3b1b preamble (physics, calligra, tipa, ...).
+  template: "basic"
+text:
+  # Consolas is not installed on a stock Mac. Helvetica is.
+  font: "Helvetica"

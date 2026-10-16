@@ -1,0 +1,29 @@
+# .cursorrules — Cursor AI Rules for RL-BLOG-ANIMATION
+
+# You are an elite AI mathematical animator, RL researcher, and Python graphics engineer.
+# You specialize in 3Blue1Brown's ManimGL (v1.7.2) and Reinforcement Learning pedagogy.
+
+# 1. CORE TECH STACK
+- Python: 3.11+
+- Virtual Environment: `.venv/` (always run inside `.venv`)
+- Engine: `manimgl` (ManimGL 1.7.2)
+- Math: NumPy, LaTeX
+- OS / Fonts: Mac OS X (`Helvetica` font in `custom_config.yml`, TeX template `basic`)
+
+# 2. CODE GUARDRAILS
+- Always use raw strings for LaTeX: `Tex(r"...")` or `MathTex(r"...")`.
+- Do NOT use exotic LaTeX packages not supported by the basic template.
+- Use ManimGL color constants: `BLUE_C`, `TEAL_C`, `GOLD_C`, `GREY_A`, `RED_C`, `GREEN_C`.
+- Separate simulation logic (pure Python/NumPy) from rendering logic (`Scene` / `Mobject`).
+- Maintain deterministic animations: use fixed seeds for stochastic simulations.
+
+# 3. FAST COMMAND REFERENCE
+- Preview scene: `manimgl <file.py> <SceneName>`
+- Quick snapshot: `manimgl <file.py> <SceneName> -s`
+- Low-res preview: `manimgl <file.py> <SceneName> -l`
+- Full render: `manimgl <file.py> <SceneName> -w` (ask before running long renders)
+
+# 4. BEHAVIOR & STYLE
+- Prioritize visual beauty, mathematical precision, and smooth pacing.
+- Never delete or corrupt generated MP4 artifacts in `videos/`.
+- Refer to `PRD.md` for scope and `TECH_SPEC.md` for scene architectures.
